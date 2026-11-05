@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>for molly</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #fff;
+            color: #333;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        ::selection {
+            background: #b22222;
+            color: #fff;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* header */
+        .top {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        .top small {
+            display: block;
+            color: #aaa;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .top h1 {
+            font-size: 36px;
+            font-weight: normal;
+        }
+
+        .top h1 span {
+            color: #b22222;
+        }
+
+        /* text */
+        .text {
+            max-width: 540px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .text p+p {
+            margin-top: 1em;
+        }
+
+        /* photos */
+        .photo {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .photo img {
+            border: 1px solid #eee;
+        }
+
+        .photo figcaption {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 8px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* line */
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            max-width: 100px;
+            margin: 40px auto;
+        }
+
+        /* quote */
+        blockquote {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 24px;
+            font-style: italic;
+            color: #444;
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        blockquote span {
+            color: #b22222;
+        }
+
+        blockquote cite {
+            display: block;
+            font-size: 13px;
+            color: #aaa;
+            margin-top: 12px;
+            font-style: normal;
+        }
+
+        /* numbers */
+        .numbers {
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 10px 20px 40px;
+        }
+
+        .numbers table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .numbers td {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 15px;
+        }
+
+        .numbers td:first-child {
+            font-weight: bold;
+        }
+
+        .numbers td:last-child {
+            text-align: right;
+            color: #999;
+        }
+
+        /* button */
+        .click {
+            text-align: center;
+            padding: 40px 20px 50px;
+        }
+
+        .click p {
+            color: #aaa;
+            font-style: italic;
+            margin-bottom: 14px;
+            font-size: 15px;
+        }
+
+        button {
+            font-family: Georgia, serif;
+            font-size: 14px;
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 28px;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            background: #b22222;
+        }
+
+        #out {
+            margin-top: 14px;
+            color: #b22222;
+            font-style: italic;
+            min-height: 1.5em;
+        }
+
+        /* footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #ccc;
+            border-top: 1px solid #eee;
+        }
+
+        footer span {
+            color: #b22222;
+        }
+
+        /* missing image fallback */
+        .missing-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 280px;
+            background: #f5f5f5;
+            color: #bbb;
+            font-style: italic;
+            font-size: 13px;
+            border: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            .top h1 {
+                font-size: 28px;
+            }
+
+            blockquote {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <small>day 60</small>
+        <h1>thank <span>you</span></h1>
+    </div>
+
+    <div class="text">
+        <p>we've talked every day for 60 days now. so i made this page </p>
+        <p>ahs season 1 is our thing, so it felt right to build something around it.</p>
+    </div>
+
+    <hr>
+
+    <!-- the black rose -->
+    <figure class="photo">
+        <img src="img/rose.gif" alt="the black rose — I painted it black, I know how you don't like normal things">
+        <figcaption>the black rose — halloween part 2</figcaption>
+    </figure>
+
+    <div class="text">
+        <p>halloween part 2. tate brings her a black rose and just says he painted it because he knows she doesn't like
+            normal things.Cutest things,but this scene made
+            me think of you. (without the ghost story haha)</p>
+    </div>
+
+    <blockquote>
+        you're cute. you're sweet. <span>thank you for that.</span>
+    </blockquote>
+
+    <hr>
+
+    <!-- violet & tate -->
+    <figure class="photo">
+        <img src="img/violet-tate.jpg" alt="violet and tate">
+        <figcaption>violet & tate </figcaption>
+    </figure>
+
+
+    <blockquote>
+        if you love someone, <span>you don't hurt them.</span>
+        <cite>— tate langdon</cite>
+    </blockquote>
+
+    <hr>
+
+    <!-- the house -->
+    <figure class="photo">
+        <img src="img/house.jpg" alt="the murder house">
+        <figcaption>the murder house e</figcaption>
+    </figure>
+
+    <div class="text">
+        <p>the house. it's haunted and traps everybody who enters, but honestly, it's also
+            where the good parts of the story happened. Finally we are all already in our murrder house </p>
+    </div>
+
+    <hr>
+
+    <div class="numbers">
+        <table>
+            <tr>
+                <td>days we've talked</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>days missed</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="click">
+        <p>one last thing —</p>
+        <button id="btn">click here</button>
+        <div id="out"></div>
+    </div>
+
+    <footer>made by cedric <span></span> for molly</footer>
+
+    <script>
+        document.querySelectorAll('.photo img').forEach(img => {
+            const fail = () => {
+                const d = document.createElement('div');
+                d.className = 'missing-img';
+                d.textContent = '[ missing image: ' + img.getAttribute('src') + ' ]';
+                img.replaceWith(d);
+            };
+            img.addEventListener('error', fail);
+            if (img.complete && img.naturalWidth === 0) fail();
+        });
+
+        const msgs = [
+            'hey.',
+            'again.',
+            'one more.',
+            'haha thanks I always wanted to try it))))))',
+        ];
+        let i = 0;
+        document.getElementById('btn').addEventListener('click', () => {
+            document.getElementById('out').textContent = msgs[Math.min(i, msgs.length - 1)];
+            i++;
+        });
+    </script>
+
+</body>
+
+</html>
